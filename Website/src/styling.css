@@ -131,8 +131,8 @@ h3{
     float: right;
     bottom: 35vh;
     margin-right: 7vw;
-    height: fit-content;
-    width: fit-content;
+    height: max-content;
+    width: max-content;
 }
 
 .gifs.left{
