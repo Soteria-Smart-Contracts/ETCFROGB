@@ -35,6 +35,7 @@ h2{
     cursor: pointer;
     border-radius: 10px;
     margin-bottom: 1vh;
+    box-shadow: black;
 }
 
 .logo{
