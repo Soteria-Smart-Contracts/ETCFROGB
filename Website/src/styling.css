@@ -128,10 +128,10 @@ h3{
 
 .gifs.right{
     float: right;
-    position: fixed;
+    position: relative;
 }
 
 .gifs.left{
     float: left;
-    position: fixed;
+    position: relative;
 }
