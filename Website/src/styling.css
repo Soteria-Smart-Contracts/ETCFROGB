@@ -105,9 +105,9 @@ h3{
     font-size: large;
     text-align: center;
     width: 12vw;
-    height: 3vh;
+    height: vh;
     border-radius: 30px;
     border: solid 2px #3aeb1b;
     padding-left: 1vw;
-    margin-bottom: 3vh;
+    margin-bottom: 2vh;
 }
