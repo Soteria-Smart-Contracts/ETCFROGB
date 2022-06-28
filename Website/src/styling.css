@@ -138,7 +138,7 @@ h3{
 .gifs.left{
     float: left;
     margin-top: 22vh;
-    height: fit-content;
-    width: fit-content;
+    height: max-content;
+    width: max-content;
     margin-left: 7vw;
 }
