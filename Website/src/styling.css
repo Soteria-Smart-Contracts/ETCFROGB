@@ -24,6 +24,7 @@ h1{
 
 .mintdiv{
     width: 40vw;
+    margin: 0 auto;
     height: 30vh;
     padding-top: 1vh;
     position: relative;
