@@ -8,7 +8,7 @@ async function loginWithEth(){
         await getID();
         if (netID != 61){
             console.log("The current Metamask/Web3 network is not Ethereum Classic, please connect to the Ropsten test network."); //CHANGE FOR REAL CROWDSALE TO ETC
-            alert("The current Metamask/Web3 network is not Ropsten, please connect to the Ropsten test network.");
+            alert("The current Metamask/Web3 network is not Ropsten, please connect to the Ethereum Classic test network.");
             showOverlay();
             return("Failed to connect")
         }
