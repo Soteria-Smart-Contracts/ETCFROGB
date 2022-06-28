@@ -66,11 +66,11 @@ h2{
     background-color: rgb(95, 95, 95);
     border: dashed 6px #3aeb1b;
     border-radius: 20px;
-    align-items: ;
 }
 
 .mintdiv{
     height: 10vh;
+    margin: 0 auto;
     width: 10vw;
     text-align: center;
     padding: 2vh;
