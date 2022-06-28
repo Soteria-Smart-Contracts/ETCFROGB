@@ -1,7 +1,7 @@
 body{
     background-image: url("images/bg.png");
     display: block;
-    height: max-content;
+    height: 98vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
