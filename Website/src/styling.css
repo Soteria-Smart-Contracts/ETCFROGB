@@ -33,4 +33,5 @@ h1{
     align-self: center;
     background-color: grey;
     border: solid 4px black;
+    border-radius: 10px;
 }
