@@ -85,4 +85,5 @@ h2{
 
 .input{
     font-size: large;
+    width: fit-content;
 }
