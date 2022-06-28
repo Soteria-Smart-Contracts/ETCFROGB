@@ -14,6 +14,11 @@ h1{
     font-family: serif;
 }
 
+h1{
+    font-family: serif;
+    color: white;
+}
+
 .logo{
     width: 18vw;
     height: 14vh;
