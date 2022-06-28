@@ -32,6 +32,6 @@ h1{
     position: relative;
     align-self: center;
     background-color: grey;
-    border:  6px rgb(58, 235, 27);
+    border: dashed 6px rgb(58, 235, 27);
     border-radius: 20px;
 }
