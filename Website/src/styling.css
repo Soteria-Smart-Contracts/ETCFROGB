@@ -128,7 +128,8 @@ h3{
 
 .gifs.right{
     float: right;
-    position: relative;
+    margin-bottom: 22vh;
+    margin-right: 7vw;
 }
 
 .gifs.left{
