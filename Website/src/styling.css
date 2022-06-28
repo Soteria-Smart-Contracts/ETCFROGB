@@ -18,13 +18,10 @@ h1{
     height: 14vh;
     padding-top: 1vh;
     position: relative;
-    display: block;
     align-self: center;
 }
 
 .mintdiv{
-    display: block;
-    align-self: center;
     width: 40vw;
     height: 30vh;
     padding-top: 1vh;
