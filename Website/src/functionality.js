@@ -1,5 +1,7 @@
 let account;
 
+loginWithEth();
+
 
 async function loginWithEth(){
     if(window.ethereum){
