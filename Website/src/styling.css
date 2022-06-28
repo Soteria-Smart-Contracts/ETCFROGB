@@ -149,6 +149,7 @@ h3{
     }
     .generaldiv{
         width: 80vw;
+        padding-bottom: 3vh;
     }
 
     .smallbutton.mint{
