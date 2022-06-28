@@ -126,6 +126,8 @@ h3{
     margin-bottom: 2vh;
 }
 
-.gifs{
+.gifs.right{
     float: left;
 }
+
+.gifs.right{
