@@ -64,7 +64,7 @@ h2{
     position: relative;
     align-self: center;
     background-color: rgb(95, 95, 95);
-    border: dashed 6px #3aeb1b;
+    border: dashed 3px #3aeb1b;
     border-radius: 20px;
     padding-bottom: 2%;
 }
