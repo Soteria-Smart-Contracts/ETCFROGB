@@ -146,8 +146,7 @@ h3{
 @media only screen and (max-device-width: 480px){
     body{
         
-        height: 98vh;
-        max-height: 98vh;
+        height: fit-content;
         
     }
    }
