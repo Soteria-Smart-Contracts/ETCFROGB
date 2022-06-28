@@ -1,8 +1,7 @@
 body{
     background-image: url("images/bg.png");
     display: block;
-    height: 98vh;
-    max-height: 98vh;
+    height: fit-content;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
