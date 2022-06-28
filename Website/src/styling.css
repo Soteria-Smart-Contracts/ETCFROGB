@@ -152,6 +152,10 @@ h3{
         padding-bottom: 3vh;
     }
 
+    .input{
+        width: 20vw;
+    }
+
     .smallbutton.mint{
         width: 20vw;
     }
