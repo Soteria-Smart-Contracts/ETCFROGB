@@ -74,8 +74,8 @@ h3{
 .gifs{
     position: relative;
     display: inline-block;
-    height: ;
-    width: ;
+    height: 10wh;
+    width: 10vw;
     border-radius: 100px;
     background-color: black;
     border: #3aeb1b solid 5px;
