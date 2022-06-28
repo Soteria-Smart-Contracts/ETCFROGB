@@ -145,15 +145,9 @@ h3{
 
 @media only screen and (max-device-width: 480px){
     body{
-        background-image: url("images/bg.png");
-        display: block;
+        
         height: 98vh;
         max-height: 98vh;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        text-align: center;
-        align-items: center;
-        align-content: center;
+        
     }
    }
