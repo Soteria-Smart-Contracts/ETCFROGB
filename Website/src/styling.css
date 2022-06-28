@@ -69,7 +69,8 @@ h2{
 }
 
 .mintdiv{
-    height: ;
+    height: 10vh;
+    width: 10vw;
     text-align: center;
     padding: 2vh;
     margin-top: 5vh;
