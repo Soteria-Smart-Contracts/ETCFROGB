@@ -114,6 +114,7 @@ h3{
 
 .center{
     display: inline;
+    max-height: 98vh;
 }
 
 .input{
