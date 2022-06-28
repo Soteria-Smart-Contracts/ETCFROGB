@@ -133,6 +133,7 @@ h3{
     height: max-content;
     padding: 3vh;
     width: max-content;
+    margin-left: 0;
 }
 
 .gifs.left{
@@ -140,7 +141,7 @@ h3{
     height: max-content;
     width: max-content;
     padding: 3vh;
-    margin-left: 7vw;
+    margin-left: 0;
 }
 
 .gif{
