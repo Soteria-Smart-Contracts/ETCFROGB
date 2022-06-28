@@ -144,7 +144,7 @@ h3{
 
 @media (pointer:none), (pointer:coarse) {
     .logo{
-        display: none;
+        width: ;
 
     }
 }
