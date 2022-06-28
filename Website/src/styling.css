@@ -31,7 +31,7 @@ h1{
     margin-top: 5vh;
     position: relative;
     align-self: center;
-    background-color: grey;
-    border: dashed 6px rgb(58, 235, 27);
+    background-color: rgb(84, 84, 84);
+    border: dashed 6px #3aeb1b;
     border-radius: 20px;
 }
