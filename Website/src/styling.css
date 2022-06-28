@@ -129,7 +129,7 @@ h3{
 
 .gifs.right{
     float: right;
-    bottom: 35vh;
+    bottom: 25vh;
     margin-right: 7vw;
     height: max-content;
     padding: 3vh;
@@ -138,7 +138,7 @@ h3{
 
 .gifs.left{
     float: left;
-    margin-top: 22vh;
+    margin-top: 17vh;
     height: max-content;
     width: max-content;
     padding: 3vh;
