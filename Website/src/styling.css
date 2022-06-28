@@ -153,7 +153,6 @@ h3{
     }
 
     .gifs{
-        margin-top: 5vh;
-        margin-right: 6vh;
+        display: none;
     }
 }
