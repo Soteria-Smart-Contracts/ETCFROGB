@@ -142,3 +142,7 @@ h3{
     height: 30vh;
     border-radius: 100px;
 }
+
+@media only screen and (max-device-width: 480px){
+    /* in mobile css commands */ 
+   }
