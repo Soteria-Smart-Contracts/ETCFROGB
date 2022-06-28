@@ -151,7 +151,10 @@ h3{
         width: 80vw;
     }
 
-    .smallbutton.mintdiv
+    .smallbutton.mint{
+        width: 20vw;
+        margin-bottom: ;
+    }
 
     .gifs{
         display: none;
