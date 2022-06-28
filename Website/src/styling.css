@@ -132,5 +132,6 @@ h3{
 }
 
 .gifs.left{
-   margin-top: 30vh;
+    float: left;
+    ma
 }
