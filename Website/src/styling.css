@@ -144,6 +144,14 @@ h3{
 
 @media only screen and (max-device-width: 480px){
     body{
+
+        .logo{
+            width: 40vw;
+            height: 14vh;
+            padding-top: 1vh;
+            position: relative;
+            align-self: center;
+        }
         
         
     }
