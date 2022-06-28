@@ -69,5 +69,16 @@ h2{
 }
 
 .mintdiv{
-    
+    width: 40vw;
+    margin: 0 auto;
+    height: 40vh;
+    text-align: center;
+    padding: 2vh;
+    margin-top: 5vh;
+    position: relative;
+    align-self: center;
+    background-color: rgb(95, 95, 95);
+    border: dashed 6px #3aeb1b;
+    border-radius: 20px;
+
 }
