@@ -147,7 +147,9 @@ h3{
         width: 40vh;
 
     }
-    
+    .generaldiv{
+        width: 80vw;
+    }
 
     .gifs{
         display: none;
