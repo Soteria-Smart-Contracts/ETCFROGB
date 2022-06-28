@@ -126,3 +126,7 @@ h3{
     padding-left: 1vw;
     margin-bottom: 2vh;
 }
+
+.gifs{
+    float: left;
+}
