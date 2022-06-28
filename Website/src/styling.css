@@ -57,7 +57,7 @@ h2{
 .generaldiv{
     width: 40vw;
     margin: 0 auto;
-    height: 40vh;
+    height: max-content;
     text-align: center;
     padding: 2vh;
     margin-top: 5vh;
