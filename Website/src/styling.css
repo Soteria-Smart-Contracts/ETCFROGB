@@ -28,5 +28,5 @@ h1{
     position: relative;
     align-self: center;
     background-color: grey;
-    border: solid ;
+    border: solid 4px black;
 }
