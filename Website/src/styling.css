@@ -129,6 +129,7 @@ h3{
 }
 
 .gifs.right{
+    display: inline-block;
     bottom: 40vh;
     margin-right: 7vw;
     height: max-content;
