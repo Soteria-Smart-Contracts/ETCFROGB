@@ -132,7 +132,6 @@ h3{
 .gifs.right{
     display: inline-block;
     bottom: 40vh;
-    vertical-align: middle;
     margin-right: 7vw;
     height: max-content;
     padding: 3vh;
@@ -141,7 +140,7 @@ h3{
 }
 
 .gifs.left{
-    vertical-align: middle;
+    vertical-align: center;
     display: inline-block;
     margin-top: 17vh;
     height: max-content;
