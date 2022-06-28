@@ -22,6 +22,12 @@ h2{
     margin-bottom: 1vh;
 }
 
+h3{
+    font-family: Arial;
+    color: white;
+    font-size: 30px;
+}
+
 .smallbutton{
     background-color: #3aeb1b;
     border: none;
