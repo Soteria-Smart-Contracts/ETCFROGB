@@ -5,6 +5,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     align-items: center;
+    align-content: center;
 }
 
 .logo{
