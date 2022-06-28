@@ -84,6 +84,7 @@ h3{
 
 
 .generaldiv{
+    display: inline-block;
     width: 40vw;
     margin: 0 auto;
     height: max-content;
@@ -139,6 +140,7 @@ h3{
 }
 
 .gifs.left{
+    display: inline-block;
     margin-top: 17vh;
     height: max-content;
     width: max-content;
