@@ -132,6 +132,7 @@ h3{
     bottom: 35vh;
     margin-right: 7vw;
     height: max-content;
+    padding: 3vh;
     width: max-content;
 }
 
@@ -140,6 +141,6 @@ h3{
     margin-top: 22vh;
     height: max-content;
     width: max-content;
-    padding: ;
+    padding: 3vh;
     margin-left: 7vw;
 }
