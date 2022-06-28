@@ -32,6 +32,6 @@ h1{
     position: relative;
     align-self: center;
     background-color: grey;
-    border: solid 4px black;
-    border-radius: 15px;
+    border: solid 4px greenyellow;
+    border-radius: 20px;
 }
