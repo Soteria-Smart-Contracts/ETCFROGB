@@ -9,6 +9,10 @@ body{
     align-items: center;
 }
 
+h1{
+    font-family: serif;
+}
+
 .logo{
     width: 18vw;
     height: 14vh;
