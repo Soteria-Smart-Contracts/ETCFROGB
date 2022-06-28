@@ -150,6 +150,9 @@ h3{
 
     .mint
 
+    .generaldiv{
+        min-width: 55vh;
+    }
 
     .gifs{
         display: none;
