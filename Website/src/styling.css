@@ -127,7 +127,9 @@ h3{
 }
 
 .gifs.right{
-    float: left;
+    float: right;
 }
 
-.gifs.right{
+.gifs.left{
+    float: left;
+}
