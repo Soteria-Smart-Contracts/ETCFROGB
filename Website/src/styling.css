@@ -143,5 +143,8 @@ h3{
 }
 
 @media (pointer:none), (pointer:coarse) {
-    logo
+    .logo{
+        display: none;
+
+    }
 }
