@@ -132,6 +132,7 @@ h3{
 
 .gifs{
     display: inline-block;
+    vertical-align: bottom;
     margin-top: 17vh;
     height: max-content;
     width: max-content;
