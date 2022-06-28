@@ -9,5 +9,6 @@ body{
 .logo{
     width: 10vw;
     height: 10vh;
+    position: relative;
     align-self: center;
 }
