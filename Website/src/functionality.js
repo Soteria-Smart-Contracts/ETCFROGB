@@ -25,7 +25,7 @@ async function loginWithEth(){
 }
 
 async function getsupply{
-    
+    supply = await contract.methods.totalSupply().call();
 }
 
 async function getID(){
