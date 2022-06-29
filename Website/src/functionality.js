@@ -24,7 +24,9 @@ async function loginWithEth(){
     }
 }
 
-async function 
+async function getsupply{
+    
+}
 
 async function getID(){
     let idhex = web3.eth._provider.chainId;
