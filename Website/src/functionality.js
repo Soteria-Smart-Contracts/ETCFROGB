@@ -26,7 +26,7 @@ async function loginWithEth(){
     }
 }
 
-async function getsupply{
+async function getsupply(){
     supply = await contract.methods.totalSupply().call();
     document.getElementById("supply").innerHTML = supply;
 }
