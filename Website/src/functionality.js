@@ -33,7 +33,7 @@ async function getID(){
 
 async function mint(){
     let amount = document.getElementById("amount").value;
-    let amountWei = web3.utils.toWei(amount, "ether");
+    let amountWei = amount * 1000000000000000000;
     let tx = await contract.methods.mint(amountWei).send({from: account});
     console.log(tx);
     return(tx);
