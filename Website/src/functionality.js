@@ -31,4 +31,6 @@ async function getID(){
     return(netID);
 }
 
-async function 
+async function mint(){
+    
+}
