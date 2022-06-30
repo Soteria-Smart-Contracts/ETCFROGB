@@ -40,7 +40,7 @@ async function getID(){
 
 async function mint(){
     let amount = document.getElementById("amount").value;
-    let amountWei = amount * 1000000000000000000;
+    let amountWei = amount * 2000000000000000000;
     let tx = await contract.methods.mint(amount).send({from: account, value: amountWei, gas: 3000000});
     console.log(tx);
     return(tx);
