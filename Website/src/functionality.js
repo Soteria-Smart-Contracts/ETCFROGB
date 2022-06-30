@@ -21,7 +21,7 @@ async function loginWithEth(){
         contract = new window.web3.eth.Contract(ABI, contractAddress, window.web3);
         account = accountarray[0];
         getsupply();
-    } else {
+    } else { 
         alert("No ETHER Wallet available")
     }
 }
