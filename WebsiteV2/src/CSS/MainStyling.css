@@ -1,6 +1,7 @@
 
 ul{
-    height: 0;
+    height: min-content;
+    
 }
 
 li.nav{
