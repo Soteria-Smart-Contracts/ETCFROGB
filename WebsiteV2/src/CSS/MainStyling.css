@@ -10,6 +10,7 @@ li.nav{
     font-size: 1.5vw;
     font-weight: bold;
     margin-inline: 1.25vw;
+    text-align: center;
 }
 
 li.nav:hover{
