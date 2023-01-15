@@ -1,7 +1,7 @@
 
 
 li.nav{
-    height: fit-content;
+    height: max-content;
     display: inline-block;
     color: #93fe09;
     font-size: 1.5vw;
