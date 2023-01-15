@@ -8,7 +8,9 @@ li.nav{
     margin-inline: 1.25vw;
 }
 
-li.nav.
+li.nav:hover{
+    bacl
+}
 
 .navbar{
     position: fixed;
