@@ -5,6 +5,7 @@ a.nav{
 }
 
 .TitleBox{
+    text-align: center;
     display: block;
     color: white;
     background-color: black;
