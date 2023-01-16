@@ -54,5 +54,6 @@ li.nav:hover{
     left: 0;
     width: 100%;
     list-style-type: none;
+    text-align: left;
     margin: 0;
 }
