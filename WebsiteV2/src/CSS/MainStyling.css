@@ -23,7 +23,7 @@ body{
     border: solid #93fe09;
     border-radius: 25px;
     width: fit-content;
-    box-shadow: 0px 0px 30px #93fe09;
+    box-shadow: 0px 0px 30px 10px #93fe09;
 }
 
 .DescBox{
