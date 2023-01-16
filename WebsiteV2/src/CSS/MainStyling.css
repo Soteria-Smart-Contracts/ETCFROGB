@@ -21,7 +21,7 @@ body{
     padding-right: 1.5vw;
     margin-top: 15vh;
     border: solid #93fe09;
-    border-radius: 15px;
+    border-radius: 25px;
     width: fit-content;
 }
 
@@ -37,7 +37,7 @@ body{
     background-color: black;
     width: 35vw;
     border: solid #93fe09;
-    border-radius: 15px;
+    border-radius: 25px;
     font-size: larger;
 }
 
