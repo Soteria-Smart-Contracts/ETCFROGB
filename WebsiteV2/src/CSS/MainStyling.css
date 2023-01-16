@@ -4,6 +4,10 @@ a.nav{
     color: #93fe09;
 }
 
+body{
+    alig: center;
+}
+
 .TitleBox{
     display: block;
     color: white;
