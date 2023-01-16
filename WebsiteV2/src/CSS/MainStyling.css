@@ -5,6 +5,7 @@ a.nav{
 }
 
 .TitleBox{
+    di
     color: white;
     background-color: black;
     font-size: xx-large;
@@ -14,7 +15,6 @@ a.nav{
     border: solid #93fe09;
     border-radius: 15px;
     width: fit-content;
-    align-self: center;
 }
 
 
