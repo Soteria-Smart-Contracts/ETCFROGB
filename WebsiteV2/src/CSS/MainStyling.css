@@ -33,7 +33,7 @@ body{
 }
 
 .DescBox{
-    margin-top: 7vh;
+    margin-top: 5vh;
     font-family: RoadRage;
     display: block;
     padding: 1.25vw;
@@ -46,7 +46,7 @@ body{
     width: 35vw;
     border: solid #93fe09;
     border-radius: 25px;
-    font-size: small;
+    font-size: medium;
     box-shadow: 0px 0px 5px 4px #93fe09;
 }
 
