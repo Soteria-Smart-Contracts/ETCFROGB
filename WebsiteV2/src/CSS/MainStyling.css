@@ -26,7 +26,11 @@ body{
 }
 
 .DescBox{
-    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    background-color: black;
 }
 
 
