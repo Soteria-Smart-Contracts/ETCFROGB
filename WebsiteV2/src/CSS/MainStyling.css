@@ -5,7 +5,7 @@ a.nav{
 }
 
 .TitleBox{
-    display: flex;
+    display: grid;
     color: white;
     background-color: black;
     font-size: xx-large;
