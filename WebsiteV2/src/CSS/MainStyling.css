@@ -40,7 +40,7 @@ li.nav{
 }
 
 li.nav.first{
-    padding-inline: 1.25vw;
+    padding-inline: 0vw;
 }
 
 li.nav:hover{
