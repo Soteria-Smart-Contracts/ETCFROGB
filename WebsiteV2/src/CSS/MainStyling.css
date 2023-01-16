@@ -39,6 +39,10 @@ li.nav{
     text-align: center;
 }
 
+li.nav.first{
+    padding-inline: 1.25vw;
+}
+
 li.nav:hover{
     background-color: #5f64ff;
 }
