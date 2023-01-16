@@ -31,6 +31,7 @@ body{
     margin-right: auto;
     color: white;
     background-color: black;
+    width: min-content;
 }
 
 
