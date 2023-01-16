@@ -13,7 +13,8 @@ a.nav{
     margin-top: 15vh;
     border: solid #93fe09;
     border-radius: 15px;
-    width: ;
+    width: fit-content;
+    align-self: center;
 }
 
 
