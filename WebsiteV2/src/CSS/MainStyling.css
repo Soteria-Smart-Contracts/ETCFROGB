@@ -1,4 +1,9 @@
 
+@font-face {
+    font-family: RoadRage;
+    src: url(/);
+}
+
 a.nav{
     text-decoration: none;
     color: #93fe09;
