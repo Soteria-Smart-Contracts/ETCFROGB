@@ -10,6 +10,8 @@ body{
 
 .TitleBox{
     display: block;
+    margin-left: auto;
+    mar
     color: white;
     background-color: black;
     font-size: xx-large;
