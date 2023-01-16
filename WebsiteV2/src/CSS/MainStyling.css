@@ -11,7 +11,8 @@ a.nav{
     font-weight: bolder;
     padding: 2vw;
     margin-top: 15vh;
-    border: #93fe09 ;
+    border: solid #93fe09;
+    border-radius: ;
 }
 
 
