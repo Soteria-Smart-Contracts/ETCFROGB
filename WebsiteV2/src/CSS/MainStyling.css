@@ -36,6 +36,8 @@ body{
     color: white;
     background-color: black;
     width: 35vw;
+    border: solid #93fe09;
+    border-radius: 15px;
     font-size: larger;
 }
 
