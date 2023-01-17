@@ -53,7 +53,8 @@ body{
 .InfoBox{
     margin-top: 5vh;
     font-family: RoadRage;
-    display: ;
+    display: flex;
+    flex-direction: ;
 }
 
 
