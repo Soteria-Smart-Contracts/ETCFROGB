@@ -52,6 +52,7 @@ body{
 
 .InfoBox{
     margin-top: 5vh;
+    display: inline-block;
     font-family: RoadRage;
     padding: 1.25vw;
     padding-left: 1.5vw;
