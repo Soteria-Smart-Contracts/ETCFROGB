@@ -71,8 +71,8 @@ body{
 .InfoBox.right{
     margin-right: 5vw;
 }
-.InfoBox{
-    margin-right: 5vw;
+.InfoBox.left{
+    margin-left: 5vw;
 }
 
 
