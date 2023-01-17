@@ -84,7 +84,7 @@ body{
     border: solid white 2px;
     border-radius: 10px;
     width: fit-content;
-    
+    text-decoration: underline;
 }
 
 .ButtonReg:hover{
