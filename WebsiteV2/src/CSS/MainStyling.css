@@ -86,7 +86,9 @@ body{
     width: fit-content;
 }
 
-.ButtonReg:hove
+.ButtonReg:hover{
+    cursor: pointer;
+}
 
 ul{
     margin: 0;
