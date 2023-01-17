@@ -78,7 +78,7 @@ body{
 .ButtonReg{
     color: #93fe09;
     border: solid white 2px;
-    
+    width: fit-content;
 }
 
 ul{
