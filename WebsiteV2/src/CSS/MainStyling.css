@@ -80,6 +80,7 @@ body{
     padding: 0.25vw;
     background-color: #93fe09;
     border: solid white 2px;
+    border-radius: 30px;
     width: fit-content;
 }
 
