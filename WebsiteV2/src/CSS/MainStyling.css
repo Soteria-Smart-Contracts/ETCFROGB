@@ -68,7 +68,9 @@ body{
     box-shadow: 0px 0px 5px 4px #93fe09;
 }
 
-.InfoBox.
+.InfoBox.bottom{
+    width: fit-content;
+}
 
 .InfoBox.right{
     margin-left: 3.5vw;
