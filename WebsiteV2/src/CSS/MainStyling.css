@@ -74,7 +74,8 @@ body{
     font-size: larger;
     font-weight: bold;
     text-align: center;
-    padding: 1vw;
+    padding: .25vw;
+    
 }
 
 .InfoBox{
