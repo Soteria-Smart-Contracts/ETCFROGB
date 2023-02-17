@@ -109,6 +109,24 @@ body{
     margin-right: 3.5vw;
 }
 
+.MintButton{
+    background-color: #3aeb1b;
+    border: none;
+    font-family: Arial;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2vh 1vw;
+    cursor: pointer;
+    border: black solid 2px;
+    border-radius: 10px;
+    margin-bottom: 1vh;
+    box-shadow: 2px 3px black;
+}
+
 .ButtonReg{
     color: black;
     padding: 0.25vw;
