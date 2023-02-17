@@ -116,7 +116,9 @@ li.nav.first{
     padding-inline: 0vw;
 }
 
-li.nav.
+li.nav.active{
+    background-color: #5f64ff;
+}
 
 li.nav:hover{
     background-color: #5f64ff;
