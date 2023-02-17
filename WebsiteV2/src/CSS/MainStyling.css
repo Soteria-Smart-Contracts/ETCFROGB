@@ -75,7 +75,8 @@ body{
     font-weight: bold;
     text-align: center;
     padding: .25vw;
-    border: #93fe09;
+    border: #93fe09 solid 3px;
+    border-radius: ;
 }
 
 .InfoBox{
