@@ -48,7 +48,7 @@ async function mint(){
     let userbal = await web3.eth.getBalance(account);
     if(amountWei > userbal){
         alert("Insufficient ETC to buy this number of Bogs")
-        return
+        return('Error Thrown')
     }
     let gas = await contract.methods.mint(amount).estimateGas({from: account});
     let tx = await contract.methods.mint(amount).send({from: account, value: amountWei, gas: gas});
