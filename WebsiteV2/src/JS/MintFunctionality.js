@@ -44,7 +44,8 @@ async function getID(){
 async function mint(){
     let amount = document.getElementById("amount").value;
     let amountWei = amount * 2000000000000000000;
-    if(amountWei > )
+    let userbal = await web3.eth.getBalance(account);
+    if(amountWei > await web3.eth.getBalance(account))
     let gas = await contract.methods.mint(amount).estimateGas({from: account});
     let tx = await contract.methods.mint(amount).send({from: account, value: amountWei, gas: gas});
 }
