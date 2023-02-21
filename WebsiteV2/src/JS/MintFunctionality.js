@@ -44,7 +44,7 @@ async function getID(){
 async function mint(){
     let amount = document.getElementById("amount").value;
     if(amount == 0 || amount > 100){
-        alert("Must be ")
+        alert("Amount to mint Must be ")
         return('Error Thrown')
     }
     let amountWei = amount * 2000000000000000000;
