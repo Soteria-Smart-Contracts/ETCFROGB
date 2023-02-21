@@ -44,7 +44,7 @@ async function getID(){
 async function mint(){
     let amount = document.getElementById("amount").value;
     let amountWei = amount * 2000000000000000000;
-    let gas = await contract.methods.mint.(amount).estimateGas({from: account})
+    let gas = await contract.methods.mint.(amount).estimateGas({from: account});
     let tx = await contract.methods.mint(amount).send({from: account, value: amountWei, gas: 3000000});
     console.log(tx);
     return(tx);
