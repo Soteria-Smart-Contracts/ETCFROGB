@@ -3,6 +3,6 @@ MintButton = document.getElementById('MintButton')
 
 
 async function DisplayLoggedIn(){
-    MintButton.
+    MintButton.InnerText = 
 
 }
