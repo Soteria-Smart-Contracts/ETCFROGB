@@ -23,7 +23,10 @@ async function loginWithEth(){
     } else { 
         alert("No ETHER Wallet available")
     }
-}
+    }
+    else{
+        
+    }
 }
 
 async function getsupply(){
