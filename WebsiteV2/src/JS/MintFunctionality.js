@@ -43,7 +43,7 @@ async function getID(){
 
 async function mint(){
     let amount = document.getElementById("amount").value;
-    if(amount == 0 ){
+    if(amount == 0 || amount > ){
         alert("Insufficient ETC to buy this number of Bogs")
         return('Error Thrown')
     }
