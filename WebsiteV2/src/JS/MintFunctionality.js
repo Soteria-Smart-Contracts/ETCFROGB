@@ -43,7 +43,10 @@ async function getID(){
 
 async function mint(){
     let amount = document.getElementById("amount").value;
-    if
+    if(amount ){
+        alert("Insufficient ETC to buy this number of Bogs")
+        return('Error Thrown')
+    }
     let amountWei = amount * 2000000000000000000;
     let userbal = await web3.eth.getBalance(account);
     if(amountWei > userbal){
