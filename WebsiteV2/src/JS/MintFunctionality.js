@@ -5,7 +5,7 @@ const contractAddress = "0x5925630e4D0AB569A40E600064Da2930b4838Da3";
 let LoggedIn;
 
 async function loginWithEth(){
-    if
+    if(LoggedIn == false){
     if(window.ethereum){
         await ethereum.request({ method: 'eth_requestAccounts' });
         window.web3 = await new Web3(ethereum);
@@ -23,6 +23,7 @@ async function loginWithEth(){
     } else { 
         alert("No ETHER Wallet available")
     }
+}
 }
 
 async function getsupply(){
