@@ -1,4 +1,4 @@
-MintButton = 
+MintButton = document.getElementById('MintButton')
 
 
 
