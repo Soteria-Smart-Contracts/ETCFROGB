@@ -1,5 +1,5 @@
 MintButton = document.getElementById('MintButton')
-WalletButton = document.getElementById('MintButton')
+WalletButton = document.getElementById('Wallet')
 
 
 
