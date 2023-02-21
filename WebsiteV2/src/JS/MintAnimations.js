@@ -6,6 +6,6 @@ WalletButton = document.getElementById('Wallet')
 
 async function DisplayLoggedIn(){
     MintButton.innerText = "Mint";
-    MintButton.OnClick = "mint()";
+    MintButton.onclick = "mint()";
     WalletButton.innerText = "Connected"
 }
