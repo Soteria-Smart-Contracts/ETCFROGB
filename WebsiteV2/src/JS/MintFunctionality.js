@@ -2,6 +2,7 @@ let account;
 const ABI = window.abi;
 let netID;
 const contractAddress = "0x5925630e4D0AB569A40E600064Da2930b4838Da3";
+let LoggedIn;
 
 async function loginWithEth(){
     if(window.ethereum){
