@@ -2,4 +2,6 @@
 
 
 
-function async DisplayLoggedIn()
+function DisplayLoggedIn(){
+
+}
