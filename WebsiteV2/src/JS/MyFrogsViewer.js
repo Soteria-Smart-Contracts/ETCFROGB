@@ -6,7 +6,7 @@ let LoggedIn = false;
 let NFTs = [];
 
 let WalletButton = document.getElementById('Wallet');
-const NFTTemplate = document.getElementById()
+const NFTTemplate = document.getElementById('Temp');
 
 loginWithEth();
 
