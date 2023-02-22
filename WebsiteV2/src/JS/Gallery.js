@@ -1,6 +1,11 @@
 let NFTContainer = document.getElementById('NFTList')
 
 
+async function
+
+
+
+
 
 async function DisplayNFT(ID){
     NewNFT = document.createElement("div");
