@@ -47,7 +47,6 @@ async function GetUserNFTs(){
 <img class="nftimage" src="src/images/collection/1445.png">
 <a class="nftID head">FrogB ID:</a>
 <br><a class="nftID" id="ID">0</a>
-<br><a class="nftID head">MoonBird Rank:</a>
 <br><a class="nftID">259</a>
 <br><a class="nftID scout" href="https://blockscout.com/etc/mainnet/token/0x2001d679210c0e4531f5c07155d8e3677dd388ae/instance/1445/token-transfers" target="_blank">View On Blockscout</a>
 </div>
