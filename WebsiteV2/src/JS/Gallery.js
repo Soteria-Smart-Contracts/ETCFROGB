@@ -12,9 +12,6 @@ async function LoadGallery(){
 }
 
 
-
-
-
 async function DisplayNFT(ID){
     NewNFT = document.createElement("div");
     NewNFT.className = 'NFT'
