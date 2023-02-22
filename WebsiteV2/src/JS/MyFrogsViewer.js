@@ -41,5 +41,5 @@ async function getID(){
 }
 
 async function GetUserNFTs(){
-    NFTs = await 
+    NFTs = await contract.methods.
 }
