@@ -235,7 +235,7 @@ li.nav:hover{
     margin-bottom: 1vh;
     box-shadow: 2px 3px black;
     position: relative;
-    float: right;
+    float: center;
     margin-top: 1vh;
     margin-right: 2vw;
 }
