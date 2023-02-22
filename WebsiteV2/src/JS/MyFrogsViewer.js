@@ -48,9 +48,9 @@ async function DisplayNFT(ID){
     NewNFT = document.createElement("div");
     NewNFT.class = 'NFT'
     NewNFT.id = ID;
-    let img = '<img class="nftimage" src="https://ipfs.io/ipfs/QmdHWsMWde4UCTiQJojN2ed3rBmxFAsjQkKZDi4dCZZB3F/' + 'ID' + '.png">'
+    let img = '<img class="nftimage" src="https://ipfs.io/ipfs/QmdHWsMWde4UCTiQJojN2ed3rBmxFAsjQkKZDi4dCZZB3F/' + ID + '.png">'
     let ScoutLink = 'https://blockscout.com/etc/mainnet/token/0x5925630e4D0AB569A40E600064Da2930b4838Da3/instance/' + ID +  '/token-transfers';
-    NewNFT.innerHTML = img + '<a class="nftID head">FrogB ID:</a>' + '<br>' + '<a class="nftID">' + ID + '</a>' + '<br>' + '<a class="nftID scout" href="' + BlockscoutLink + '" target="_blank">View On Blockscout</a>';
+    NewNFT.innerHTML = img + '<a class="nftID head">FrogB ID:</a>' + '<br>' + '<a class="nftID">' + ID + '</a>' + '<br>' + '<a class="nftID scout" href="' + ScoutLink + '" target="_blank">View On Blockscout</a>';
     NFTContainer.appendChild(NewNFT);
 }
 
