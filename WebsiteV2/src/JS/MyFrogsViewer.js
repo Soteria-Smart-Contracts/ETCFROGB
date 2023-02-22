@@ -45,7 +45,7 @@ async function GetUserNFTs(){
 
 async function DisplayNFT(ID){
     NewNFT = document.createElement("div");
-    NewNFT.class = 
+    NewNFT.class = 'NFT'
     NewNFT.id = ID;
 
 }
