@@ -57,5 +57,5 @@ async function mint(){
     let tx = await contract.methods.mint(amount).send({from: account, value: amountWei, gas: gas});
 
     getsupply();
-    alert('')
+    alert('ETCFrogB Successfully Minted, check the "My')
 }
