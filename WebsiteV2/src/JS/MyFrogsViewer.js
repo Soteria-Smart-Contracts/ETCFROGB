@@ -6,8 +6,7 @@ let LoggedIn = false;
 let NFTs = [];
 
 let WalletButton = document.getElementById('Wallet');
-const NFTTemplate = document.getElementById('Temp').cloneNode(true);
-
+jj
 loginWithEth();
 
 async function loginWithEth(){
