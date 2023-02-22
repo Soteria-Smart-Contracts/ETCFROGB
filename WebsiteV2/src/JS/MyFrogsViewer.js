@@ -43,6 +43,8 @@ async function GetUserNFTs(){
     NFTs = await contract.methods.walletOfOwner(account).call();
 }
 
+async function DisplayNFT(ID)
+
 <div class="NFT" id="Temp">
 <img class="nftimage" src="src/images/collection/1445.png">
 <a class="nftID head">FrogB ID:</a>
