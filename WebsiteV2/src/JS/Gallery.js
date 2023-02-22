@@ -1,8 +1,10 @@
 let NFTContainer = document.getElementById('NFTList')
-let LastLoaded = 0;
+let LastLoaded = 1;
 
 
-async function LoadGallery()
+async function LoadGallery(){
+    index = 0;
+}
 
 
 
