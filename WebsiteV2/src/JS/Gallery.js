@@ -3,8 +3,7 @@ let LastLoaded = 1;
 
 
 async function LoadGallery(){
-    index = LastLoaded;
-    
+    while
 }
 
 
