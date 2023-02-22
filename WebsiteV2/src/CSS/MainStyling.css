@@ -236,5 +236,7 @@ li.nav:hover{
     max-width: 13vw;
     min-width: 175px;
     border-radius: 5px;
+    border-top-right-radius: 24px;
+    border-top-left-radius: 24px;
     margin-bottom: 1vh;
 }
