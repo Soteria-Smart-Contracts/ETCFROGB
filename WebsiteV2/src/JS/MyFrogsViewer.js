@@ -55,26 +55,6 @@ async function DisplayNFT(ID){
     NFTContainer.appendChild(NewNFT);
 }
 
-DisplayNFT(9980)
-DisplayNFT(9980)
-DisplayNFT(9980)
-DisplayNFT(9980)
-DisplayNFT(9980)
-DisplayNFT(9980)
-DisplayNFT(9980)
-DisplayNFT(9980)
-DisplayNFT(9980)
-DisplayNFT(9980)
-DisplayNFT(9980)
-DisplayNFT(9980)
-DisplayNFT(9980)
-DisplayNFT(9980)
-DisplayNFT(9980)
-DisplayNFT(9980)
-DisplayNFT(9980)
-DisplayNFT(9980)
-DisplayNFT(9980)
-
 {/* <div class="NFT" id="Temp">
 <img class="nftimage" src="src/images/collection/1445.png">
 <a class="nftID head">FrogB ID:</a>
