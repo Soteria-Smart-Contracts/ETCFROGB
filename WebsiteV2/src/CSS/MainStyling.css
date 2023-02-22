@@ -232,8 +232,8 @@ li.nav:hover{
 }
 
 .NFTimage{
-    height: 25vh;
-    width: 13vw;
+    max-height: 25vh;
+    max-width: 13vw;
     min-width: 175px;
     border-radius: 5px;
     border-top-right-radius: 24px;
