@@ -208,6 +208,25 @@ li.nav:hover{
     margin: 0;
 }
 
+.NFTContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 10vh;
+    margin-left: 8vw;
+    margin-right: 10vw;
+
+}
+
 .NFT{
-    heig
+    height: fit-content;
+    min-width: 175px;
+    width: 13vw;
+    text-align: center;
+    background-color: #15154c;
+    border-radius: 30px;
+    border: solid 5px #15154c;
+    margin: 2vh;
+    padding-bottom: 2vh;
 }
