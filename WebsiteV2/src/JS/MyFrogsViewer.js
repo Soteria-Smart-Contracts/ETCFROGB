@@ -46,7 +46,7 @@ async function GetUserNFTs(){
 
 async function DisplayNFT(ID){
     NewNFT = document.createElement("div");
-    NewNFT.class = 'NFT'
+    NewNFT.className = 'NFT'
     NewNFT.id = ID;
     let img = '<img class="nftimage" src="https://ipfs.io/ipfs/QmdHWsMWde4UCTiQJojN2ed3rBmxFAsjQkKZDi4dCZZB3F/' + ID + '.png">'
     let ScoutLink = 'https://blockscout.com/etc/mainnet/token/0x5925630e4D0AB569A40E600064Da2930b4838Da3/instance/' + ID +  '/token-transfers';
