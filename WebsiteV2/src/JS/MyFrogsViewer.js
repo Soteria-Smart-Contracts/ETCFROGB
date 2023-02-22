@@ -64,6 +64,16 @@ DisplayNFT(9980)
 DisplayNFT(9980)
 DisplayNFT(9980)
 DisplayNFT(9980)
+DisplayNFT(9980)
+DisplayNFT(9980)
+DisplayNFT(9980)
+DisplayNFT(9980)
+DisplayNFT(9980)
+DisplayNFT(9980)
+DisplayNFT(9980)
+DisplayNFT(9980)
+DisplayNFT(9980)
+DisplayNFT(9980)
 
 {/* <div class="NFT" id="Temp">
 <img class="nftimage" src="src/images/collection/1445.png">
