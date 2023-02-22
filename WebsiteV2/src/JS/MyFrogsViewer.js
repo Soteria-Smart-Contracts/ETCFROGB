@@ -26,8 +26,9 @@ async function loginWithEth(){
         contract = new window.web3.eth.Contract(ABI, contractAddress, window.web3);
         account = accountarray[0];
         WalletButton.innerText = "Connected";
-        console.log('Logged In')
+        console.log('Logged In');
         LoggedIn = true;
+        GetUserNFTs();
     } else { 
         alert("No ETHER Wallet available")
     }
@@ -45,8 +46,8 @@ async function GetUserNFTs(){
     NFTs = await contract.methods.walletOfOwner(account).call();
     let index = 0;
     while(index < NFTs.length){
-        DisplayNFT(NFTs[index])
-        index++
+        DisplayNFT(NFTs[index]);
+        index++;
     }
 
 }
