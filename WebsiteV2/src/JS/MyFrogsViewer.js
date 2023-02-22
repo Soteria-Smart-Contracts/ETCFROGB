@@ -49,6 +49,7 @@ async function DisplayNFT(ID){
     NewNFT.id = ID;
     let img = '<img class="nftimage" src="src/images/collection/1445.png">'
     let ScoutLink = 'https://blockscout.com/etc/mainnet/token/0x5925630e4D0AB569A40E600064Da2930b4838Da3/instance/' + ID +  '/token-transfers';
+    
 }
 
 {/* <div class="NFT" id="Temp">
