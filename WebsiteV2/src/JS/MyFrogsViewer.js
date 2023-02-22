@@ -40,4 +40,6 @@ async function getID(){
     return(netID);
 }
 
-async function GetUserNFTs()
+async function GetUserNFTs(){
+    
+}
