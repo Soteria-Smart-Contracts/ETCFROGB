@@ -3,8 +3,8 @@ let LastLoaded = 1;
 
 
 async function LoadGallery(){
-    let LastToLoad
-    while(LastLoaded < Las)
+    let LastToLoad = LastLoaded + 50;
+    while(LastLoaded < LastToLoad)
 }
 
 
