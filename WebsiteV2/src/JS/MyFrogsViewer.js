@@ -47,7 +47,7 @@ async function DisplayNFT(ID){
     NewNFT = document.createElement("div");
     NewNFT.class = 'NFT'
     NewNFT.id = ID;
-    
+    let InnerHTML = ""
 }
 
 <div class="NFT" id="Temp">
