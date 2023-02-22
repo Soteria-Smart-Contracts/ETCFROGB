@@ -1,5 +1,4 @@
-
-
+let NFTContainer = document.getElementById('NFTList')
 
 
 
