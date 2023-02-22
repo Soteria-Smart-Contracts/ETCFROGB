@@ -4,6 +4,8 @@ let netID;
 const contractAddress = "0x5925630e4D0AB569A40E600064Da2930b4838Da3";
 let LoggedIn = false;
 
+loginWithEth();
+
 async function loginWithEth(){
     if(LoggedIn == false){
     if(window.ethereum){
