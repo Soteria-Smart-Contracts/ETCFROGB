@@ -48,6 +48,7 @@ async function DisplayNFT(ID){
     NewNFT.class = 'NFT'
     NewNFT.id = ID;
     let img = '<img class="nftimage" src="src/images/collection/1445.png">'
+    let ScoutLink
 }
 
 {/* <div class="NFT" id="Temp">
