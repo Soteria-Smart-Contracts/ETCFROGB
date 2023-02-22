@@ -1,6 +1,7 @@
 let NFTContainer = document.getElementById('NFTList')
 let LastLoaded = 1;
 
+LoadGallery();
 
 async function LoadGallery(){
     let LastToLoad = LastLoaded + 50;
