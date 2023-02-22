@@ -5,7 +5,7 @@ let LastLoaded = 1;
 async function LoadGallery(){
     let LastToLoad = LastLoaded + 50;
     while(LastLoaded <= LastToLoad){
-        
+        DisplayNFT(LastLoaded++)
     }
 }
 
