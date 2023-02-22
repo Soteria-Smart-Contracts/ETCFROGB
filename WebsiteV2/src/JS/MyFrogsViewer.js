@@ -43,8 +43,9 @@ async function getID(){
 
 async function GetUserNFTs(){
     NFTs = await contract.methods.walletOfOwner(account).call();
-    index = 0;
-    
+    let index = 0;
+    while
+
 }
 
 async function DisplayNFT(ID){
