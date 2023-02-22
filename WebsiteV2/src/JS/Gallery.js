@@ -1,7 +1,7 @@
 let NFTContainer = document.getElementById('NFTList')
 
 
-async function
+async function LoadGallery()
 
 
 
