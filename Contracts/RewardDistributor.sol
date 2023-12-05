@@ -103,7 +103,7 @@ contract NFTRewardDistributor is ReentrancyGuard{
     }
 
     //On Deploy code to run (Constructor)
-    constructor(address _NFTcontract, uint256 _MinimumToReward){
+    constructor(address _NFTcontract){
         NFTcontract = _NFTcontract;
         Owner = msg.sender;
     }
