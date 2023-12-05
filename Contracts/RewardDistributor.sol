@@ -70,7 +70,6 @@ contract NFTRewardDistributor is ReentrancyGuard{
     //Variable Declarations
     address public Owner;
     address public NFTcontract;
-    uint256 public TotalEtherInRewards;
     RewardInstance[] public RewardInstances;
     uint256[] public AllRegisteredTokens;
     mapping(uint256 => uint256) public AllRegisteredTokensIndex;
