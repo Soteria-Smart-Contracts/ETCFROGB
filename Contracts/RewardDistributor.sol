@@ -182,6 +182,8 @@ contract NFTRewardDistributor is ReentrancyGuard{
         emit NewInstanceCreated(NewInstance);
     }
 
+    //create a function that checks all user
+
     receive() external payable {
         if((address(this).balance - TotalEtherInRewards) >= MinimumToReward){
             InitializeRewardInstance();
