@@ -69,7 +69,8 @@ async function Claim(){
     let gas = await rewardcontract.methods.ClaimAllRewards().estimateGas({from: account});
     let tx = await rewardcontract.methods.ClaimAllRewards().send({from: account, gas: gas});
     console.log(tx);
-    
+    UpdateTotalEarned();
+}
 
 async function DisplayNFT(ID){
     NewNFT = document.createElement("div");
