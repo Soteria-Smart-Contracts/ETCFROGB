@@ -140,7 +140,7 @@ contract NFTRewardDistributor is ReentrancyGuard{
         return(TotalUnclaimed);
     }
 
-    function ClaimAllRewards() public nonReentrant returns(uint256 TotalRewardOutput, uint256 len){
+    function ClaimAllRewards() public nonReentrant returns(uint256 TotalRewardOutput){
         cleanRegisteredNFTs()
 
         uint256 TotalReward;
@@ -170,7 +170,7 @@ contract NFTRewardDistributor is ReentrancyGuard{
         (payable(msg.sender)).transfer(TotalReward);
 
         emit ClaimedAllRewards(TotalReward, msg.sender);
-        return(TotalReward, len);
+        return(TotalReward);
     }
 
     //Internal functions
