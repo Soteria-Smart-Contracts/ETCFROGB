@@ -196,7 +196,7 @@ contract NFTRewardDistributor is ReentrancyGuard{
                 TokenRegistered[Tokens[index]] = false;
 
                 AllRegisteredTokens[AllRegisteredTokensIndex[Tokens[index]]] = AllRegisteredTokens[AllRegisteredTokens.length - 1];
-                
+                AllRegisteredTokens.pop();
             }
         }
     }
