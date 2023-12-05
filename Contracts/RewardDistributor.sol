@@ -182,7 +182,7 @@ contract NFTRewardDistributor is ReentrancyGuard{
         emit NewInstanceCreated(NewInstance);
     }
 
-    //create a function that checks all user
+    //create a function that checks all user registered nft and if it is still owned by the user, if 
 
     receive() external payable {
         if((address(this).balance - TotalEtherInRewards) >= MinimumToReward){
