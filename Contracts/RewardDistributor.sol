@@ -116,6 +116,8 @@ contract NFTRewardDistributor is ReentrancyGuard{
 
                 AllRegisteredTokens.push(tokens[index]);
                 AllRegisteredTokensIndex[tokens[index]] = AllRegisteredTokens.length;
+
+                RegistrationTimeUnix[tokens[index]] = block.timestamp;
             }
         }
     }
