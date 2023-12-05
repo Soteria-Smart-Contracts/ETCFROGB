@@ -93,7 +93,7 @@ contract NFTRewardDistributor is ReentrancyGuard{
         uint256 InstanceIdentifier;
         uint256 TotalEther;
         uint256 EtherReward;
-        uint256[] RegisteredTokensAt
+        uint256[] RegisteredTokensAtInstance;
     }
 
     //On Deploy code to run (Constructor)
