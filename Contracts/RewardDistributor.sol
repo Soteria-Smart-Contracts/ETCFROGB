@@ -166,6 +166,7 @@ contract NFTRewardDistributor is ReentrancyGuard{
         TotalEtherInRewards = (TotalEtherInRewards - TotalReward);
         UserTotalClaimed[msg.sender] = UserTotalClaimed[msg.sender] + TotalReward;
         (payable(msg.sender)).transfer(TotalReward);
+        
 
         emit ClaimedAllRewards(TotalReward, msg.sender);
         return(TotalReward);
