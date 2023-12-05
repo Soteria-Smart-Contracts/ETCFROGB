@@ -142,7 +142,7 @@ contract NFTRewardDistributor is ReentrancyGuard{
 
     function ClaimAllRewards() public nonReentrant returns(uint256 TotalRewardOutput, uint256 len){
         cleanRegisteredNFTs()
-        
+
         uint256 TotalReward;
         uint256[] memory Tokens = ERC721(NFTcontract).walletOfOwner(msg.sender);
         require(Tokens.length > 0, "You do not own any rewardable NFTs");
@@ -164,7 +164,7 @@ contract NFTRewardDistributor is ReentrancyGuard{
             LatestClaim[Tokens[index]] = (RewardInstances.length - 1);
         }
 
-        require(TotalReward > 1 wei, "You do not have any ETC to claim!");
+        require(TotalReward > 1, "You do not have any ETC to claim!");
         TotalEtherInRewards = (TotalEtherInRewards - TotalReward);
         UserTotalClaimed[msg.sender] = UserTotalClaimed[msg.sender] + TotalReward;
         (payable(msg.sender)).transfer(TotalReward);
