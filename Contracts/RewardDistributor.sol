@@ -153,6 +153,8 @@ contract NFTRewardDistributor is ReentrancyGuard{
 
         for(uint256 index; index < Tokens.length; index++){
             if(LatestClaim[Tokens[index]] != (RewardInstances.length - 1)){
+                uint256 Instance = LatestClaim[Tokens[index]] + 1;
+                
                 for(Instance; Instance < RewardInstances.length; Instance++){
                     TotalReward = (TotalReward + RewardInstances[Instance].EtherReward);
                 }
