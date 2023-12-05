@@ -190,9 +190,9 @@ contract NFTRewardDistributor is ReentrancyGuard{
             if(ERC721(NFTcontract).ownerOf(Tokens[index]) != msg.sender){
                 UserRegisteredTokens[msg.sender][index] = UserRegisteredTokens[msg.sender][UserRegisteredTokens[msg.sender].length - 1];
                 UserRegisteredTokens[msg.sender].pop();
+                TokenRegistered[Tokens[index]] = false;
             }
         }
-        
     }
 
     receive() external payable {
