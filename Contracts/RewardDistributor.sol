@@ -179,7 +179,7 @@ contract NFTRewardDistributor is ReentrancyGuard{
     }
 
     //Internal functions
-    function InitializeRewardInstance() internal{
+    function InitializeRewardInstance() public OnlyOwner{
         uint256 NewIdentifier = RewardInstances.length;
 
         uint256 TotalEther = (address(this).balance - TotalEtherInRewards);
