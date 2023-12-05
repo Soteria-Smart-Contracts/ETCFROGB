@@ -69,7 +69,6 @@ abstract contract ReentrancyGuard {
 contract NFTRewardDistributor is ReentrancyGuard{
     //Variable Declarations
     uint256 public Owner;
-    uint256 public TotalTokens;
     uint256 public TotalEtherInRewards;
     address public NFTcontract;
     RewardInstance[] public RewardInstances;
@@ -101,7 +100,6 @@ contract NFTRewardDistributor is ReentrancyGuard{
     //On Deploy code to run (Constructor)
     constructor(address _NFTcontract, uint256 _MinimumToReward){
         NFTcontract = _NFTcontract;
-        TotalTokens = ERC721(NFTcontract).maxSupply();
     }
 
     function registerAllNFTs() public {
