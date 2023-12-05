@@ -68,6 +68,7 @@ abstract contract ReentrancyGuard {
 
 contract NFTRewardDistributor is ReentrancyGuard{
     //Variable Declarations
+    uint256 public Owner;
     uint256 public TotalTokens;
     uint256 public TotalEtherInRewards;
     uint256 public MinimumToReward;
