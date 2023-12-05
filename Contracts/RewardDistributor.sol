@@ -123,7 +123,7 @@ contract NFTRewardDistributor is ReentrancyGuard{
     //Public functions
     function GetTotalUnclaimed() public view returns(uint256 Unclaimed){
         uint256 TotalUnclaimed;
-        uint256[] memory Tokens = ERC721(NFTcontract).walletOfOwner(msg.sender);
+        uint256[] memory Tokens = UserRegisteredTokens[msg.sender];
 
         for(uint256 index; index < Tokens.length; index++){
             if(LatestClaim[Tokens[index]] != (RewardInstances.length - 1) || LatestClaim[Tokens[index]] == 0){
