@@ -103,9 +103,6 @@ contract NFTRewardDistributor is ReentrancyGuard{
         TotalTokens = ERC721(NFTcontract).maxSupply();
     }
 
-    
-
-    // Create a function to register all NFTs
     function registerAllNFTs() public {
         uint256[] memory tokens = ERC721(NFTcontract).walletOfOwner(msg.sender);
 
