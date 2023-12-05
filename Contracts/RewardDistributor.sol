@@ -180,7 +180,7 @@ contract NFTRewardDistributor is ReentrancyGuard{
         return(UserRegisteredTokens[user]);
     }
 
-    
+    //get user
 
 
 
