@@ -61,6 +61,7 @@ async function UpdateTotalEarned(){
     total = parseFloat(total).toFixed(2);
 
     total = total.toString()
+    console.log(total);
     document.getElementById("totalearned").innerText = total;
 }
 
