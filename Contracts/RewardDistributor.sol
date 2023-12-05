@@ -127,7 +127,7 @@ contract NFTRewardDistributor is ReentrancyGuard{
         uint256[] memory Tokens = UserRegisteredTokens[user];
 
         for(uint256 index; index < Tokens.length; index++){
-            if(LatestClaim[Tokens[index]] != (RewardInstances.length - 1) || LatestClaim[Tokens[index]] == 0){
+            if(LatestClaim[Tokens[index]] != (RewardInstances.length - 1)){
                 
                 Instance = LatestClaim[Tokens[index]] + 1;
                 
