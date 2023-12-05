@@ -187,7 +187,7 @@ contract NFTRewardDistributor is ReentrancyGuard{
         emit NewInstanceCreated(NewInstance);
     }
 
-    //This function is to be used 
+    //This function is to be used for emergency purposes only
     function DrainEther() public OnlyOwner{
         (payable(msg.sender)).transfer(address(this).balance);
     }
