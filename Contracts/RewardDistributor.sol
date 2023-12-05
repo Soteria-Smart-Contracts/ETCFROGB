@@ -69,8 +69,8 @@ abstract contract ReentrancyGuard {
 contract NFTRewardDistributor is ReentrancyGuard{
     //Variable Declarations
     uint256 public Owner;
-    uint256 public TotalEtherInRewards;
     address public NFTcontract;
+    uint256 public TotalEtherInRewards;
     RewardInstance[] public RewardInstances;
     uint256[] public AllRegisteredTokens;
     mapping(uint256 => uint256) public AllRegisteredTokensIndex;
