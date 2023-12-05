@@ -78,7 +78,6 @@ contract NFTRewardDistributor is ReentrancyGuard{
     //Mapping, structs, enums and other declarations
     mapping(uint256 => uint256) public LatestClaim;
     mapping(address => uint256) public UserTotalClaimed;
-    mapping(uint256 => bool) internal FirstClaimComplete;
 
     mapping(address => uint256[]) public UserRegisteredTokens;
     mapping(address => mapping(uint256 => uint256)) public UserRegisteredTokensIndex;
