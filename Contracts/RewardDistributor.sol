@@ -170,6 +170,16 @@ contract NFTRewardDistributor is ReentrancyGuard{
         return(TotalReward);
     }
 
+    //view functions
+
+    function GetTotalRegisteredNFTs() public view returns(uint256 TotalRegisteredNFTs){
+        return(AllRegisteredTokens.length);
+    }
+
+    function GetTotalRegisteredNFTsForUser(address user) public view returns(uint256 TotalRegisteredNFTs){
+        return(UserRegisteredTokens[user].length);
+    }
+
     //Owner functions
 
     function transferOwnership(address newOwner) public OnlyOwner{
