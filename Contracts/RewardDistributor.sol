@@ -180,13 +180,6 @@ contract NFTRewardDistributor is ReentrancyGuard{
         return(UserRegisteredTokens[user]);
     }
 
-    //get user registered tokens
-    function GetUserRegisteredNFTs(address user) public view returns(uint256[] memory RegisteredNFTs){
-        return(UserRegisteredTokens[user]);
-    }
-
-
-
     //Owner functions
 
     function transferOwnership(address newOwner) public OnlyOwner{
