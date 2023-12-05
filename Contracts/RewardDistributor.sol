@@ -173,7 +173,9 @@ contract NFTRewardDistributor is ReentrancyGuard{
 
     //Owner functions
 
-    
+    function transferOwnership(address newOwner) public OnlyOwner{
+        Owner = newOwner;
+    }
 
     //Internal functions
     function InitializeRewardInstance() public OnlyOwner{
