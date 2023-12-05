@@ -57,9 +57,8 @@ async function GetUserNFTs(){
 async function UpdateTotalEarned(){
     let total = await rewardcontract.methods.totalEarned(account).call();
 
-    //convert the total from wei to eth and round to 2 decimal places using tofixed in one line
-    total = total / 1000000000000000000;
-
+    total = web3.utils.fromWei(total, 'ether');
+    total = parseFloat(total).toFixed(2);
 
     total = total.toString()
     document.getElementById("totalearned").innerText = total;
