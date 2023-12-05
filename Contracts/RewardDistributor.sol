@@ -105,7 +105,6 @@ contract NFTRewardDistributor is ReentrancyGuard{
         for (uint256 index; index < tokens.length; index++){
             UserRegisteredTokens[msg.sender].push(tokens[index]);
             UserRegisteredTokensIndex[msg.sender][tokens[index]] = UserRegisteredTokens[msg.sender].length - 1;
-            index++;
         }
     }
     
