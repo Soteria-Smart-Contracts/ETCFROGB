@@ -184,7 +184,7 @@ contract NFTRewardDistributor is ReentrancyGuard{
 
     //create a function that checks all user registered nft and if it is still owned by the user, if not remove it from the array, call this function cleanRegisteredNFTs
     function cleanRegisteredNFTs() internal{
-        uint256[] memory Tokens = ERC721(NFTcontract).walletOfOwner(msg.sender);
+        uint256[] memory Tokens = UserRegisteredTokens[msg.sender];
         uint256[] memory NewRegisteredTokens;
         uint256[] memory NewRegisteredTokensIndex;
         uint256 NewRegisteredTokensIndexCounter;
