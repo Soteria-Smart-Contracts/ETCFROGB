@@ -104,6 +104,8 @@ contract NFTRewardDistributor is ReentrancyGuard{
     constructor(address _NFTcontract){
         NFTcontract = _NFTcontract;
         Owner = msg.sender;
+        uint256[] memory empty;
+        RewardInstances.push(RewardInstance(0,0,0,0,empty));
     }
 
     function registerAllNFTs() public {
