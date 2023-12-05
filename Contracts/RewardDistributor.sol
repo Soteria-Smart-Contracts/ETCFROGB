@@ -91,6 +91,7 @@ contract NFTRewardDistributor is ReentrancyGuard{
     event NewInstanceCreated(RewardInstance NewInstanceDetails);
 
     struct RewardInstance{
+        uint256 TimeStamp;
         uint256 InstanceIdentifier;
         uint256 TotalEther;
         uint256 EtherReward;
