@@ -108,13 +108,11 @@ contract NFTRewardDistributor is ReentrancyGuard{
             if(UserRegisteredTokensIndex[msg.sender][tokens[index]] == 0){
                 UserRegisteredTokens[msg.sender].push(tokens[index]);
                 UserRegisteredTokensIndex[msg.sender][tokens[index]] = UserRegisteredTokens[msg.sender].length;
+                TokenRegistered[tokens[index]] = true;
             }
         }
     }
     
-
-
-
     //Public functions
     function GetTotalUnclaimed() public view returns(uint256 Unclaimed){
         uint256 TotalUnclaimed;
