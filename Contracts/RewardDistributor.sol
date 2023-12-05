@@ -52,7 +52,7 @@ contract NFTRewardDistributor is ReentrancyGuard{
                     TotalUnclaimed = (TotalUnclaimed + RewardInstances[Instance].EtherReward);
                 }
             }
-        }//if the token left the wallet, remove it from the mapping and skip to the next token
+        }
         return(TotalUnclaimed);
     }
 
