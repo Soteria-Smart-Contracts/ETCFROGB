@@ -146,9 +146,6 @@ contract NFTRewardDistributor is ReentrancyGuard{
 
     function ClaimAllRewards() public nonReentrant returns(uint256 TotalRewardOutput){
         cleanRegisteredNFTs();
-
-        uint256 TotalReward;
-        
         require(UserRegisteredTokens[msg.sender].length > 0, "You do not own any rewardable NFTs");
 
         uint256[] memory Tokens = UserRegisteredTokens[msg.sender];
