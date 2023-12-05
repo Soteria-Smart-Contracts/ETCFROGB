@@ -182,7 +182,23 @@ contract NFTRewardDistributor is ReentrancyGuard{
         emit NewInstanceCreated(NewInstance);
     }
 
-    //create a function that checks all user registered nft and if it is still owned by the user, if 
+    //create a function that checks all user registered nft and if it is still owned by the user, if not remove it from the array, call this function cleanRegisteredNFTs
+    function cleanRegisteredNFTs() internal{
+        uint256[] memory Tokens = ERC721(NFTcontract).walletOfOwner(msg.sender);
+        uint256[] memory NewRegisteredTokens;
+        uint256[] memory NewRegisteredTokensIndex;
+        uint256 NewRegisteredTokensIndexCounter;
+
+        for(uint256 index; index < Tokens.length; index++){
+            if(ERC721(NFTcontract).ownerOf(Tokens[index]) == msg.sender){
+                NewRegisteredTokens[NewRegisteredTokensIndexCounter] = Tokens[index];
+                NewRegisteredTokensIndex[msg.sender][Tokens[index]] = NewRegisteredTokensIndexCounter;
+                NewRegisteredTokensIndexCounter++;
+            }
+        }
+        UserRegisteredTokens[msg.sender] = NewRegisteredTokens;
+        UserRegisteredTokensIndex[msg.sender] = NewRegisteredTokensIndex;
+    }
 
     receive() external payable {
         if((address(this).balance - TotalEtherInRewards) >= MinimumToReward){
