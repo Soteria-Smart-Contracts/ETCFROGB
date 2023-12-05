@@ -34,7 +34,9 @@ contract NFTRewardDistributor is ReentrancyGuard{
         TotalTokens = ERC721(NFTcontract).maxSupply();
     }
 
-    //create a register all nfts 
+    //create a register all nfts function
+
+    
 
     //Public functions
     function GetTotalUnclaimed() public view returns(uint256 Unclaimed){
