@@ -57,7 +57,7 @@ async function GetUserNFTs(){
 async function UpdateTotalEarned(){
     let total = await rewardcontract.methods.totalEarned(account).call();
 
-    //convert
+    //convert the total to a string with 
     document.getElementById("totalearned").innerText = total;
 }
 
