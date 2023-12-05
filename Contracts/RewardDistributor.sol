@@ -177,7 +177,6 @@ contract NFTRewardDistributor is ReentrancyGuard{
         Owner = newOwner;
     }
 
-    //Internal functions
     function InitializeRewardInstance() public OnlyOwner{
         uint256 NewIdentifier = RewardInstances.length;
 
@@ -191,7 +190,8 @@ contract NFTRewardDistributor is ReentrancyGuard{
         emit NewInstanceCreated(NewInstance);
     }
 
-    //create a function that checks all user registered nft and if it is still owned by the user, if not remove it from the array, call this function cleanRegisteredNFTs
+    //Internal functions
+
     function cleanRegisteredNFTs() internal{
         uint256[] memory Tokens = UserRegisteredTokens[msg.sender];
         
