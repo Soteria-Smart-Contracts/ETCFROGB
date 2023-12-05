@@ -185,7 +185,7 @@ contract NFTRewardDistributor is ReentrancyGuard{
         uint256 TotalEther = (address(this).balance - TotalEtherInRewards);
         uint256 EtherReward = (TotalEther / TotalTokens);
 
-        RewardInstance memory NewInstance = RewardInstance(NewIdentifier, TotalEther, EtherReward, AllRegisteredTokens);
+        RewardInstance memory NewInstance = RewardInstance(block.timestamp, NewIdentifier, TotalEther, EtherReward, AllRegisteredTokens);
         RewardInstances.push(NewInstance);
         TotalEtherInRewards = TotalEtherInRewards + TotalEther;
 
