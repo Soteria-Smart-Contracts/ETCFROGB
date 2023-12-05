@@ -187,6 +187,9 @@ contract NFTRewardDistributor is ReentrancyGuard{
         emit NewInstanceCreated(NewInstance);
     }
 
+    //emergency drain ether
+    
+
     //Internal functions
 
     function cleanRegisteredNFTs() internal{
