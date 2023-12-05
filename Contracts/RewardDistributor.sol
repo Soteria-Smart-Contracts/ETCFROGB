@@ -163,7 +163,6 @@ contract NFTRewardDistributor is ReentrancyGuard{
         }
 
         require(TotalReward > 1, "You do not have any ETC to claim!");
-        TotalEtherInRewards = (TotalEtherInRewards - TotalReward);
         UserTotalClaimed[msg.sender] = UserTotalClaimed[msg.sender] + TotalReward;
         (payable(msg.sender)).transfer(TotalReward);
 
@@ -185,7 +184,6 @@ contract NFTRewardDistributor is ReentrancyGuard{
 
         RewardInstance memory NewInstance = RewardInstance(block.timestamp, NewIdentifier, TotalEther, EtherReward, AllRegisteredTokens);
         RewardInstances.push(NewInstance);
-        TotalEtherInRewards = TotalEtherInRewards + TotalEther;
 
         emit NewInstanceCreated(NewInstance);
     }
