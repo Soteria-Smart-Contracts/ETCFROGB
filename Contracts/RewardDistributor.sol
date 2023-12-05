@@ -146,7 +146,7 @@ contract NFTRewardDistributor is ReentrancyGuard{
         require(Tokens.length > 0, "You do not own any rewardable NFTs");
 
         for(uint256 index; index < Tokens.length; index++){
-            if(LatestClaim[Tokens[index]] != (RewardInstances.length - 1) || LatestClaim[Tokens[index]] == 0){
+            if(LatestClaim[Tokens[index]] != (RewardInstances.length - 1)){
                 uint256 Instance;
                 if(FirstClaimComplete[Tokens[index]] == false){
                     Instance = 0;
