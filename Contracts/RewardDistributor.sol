@@ -97,9 +97,15 @@ contract NFTRewardDistributor is ReentrancyGuard{
         uint256[] RegisteredTokensAtInstance;
     }
 
+    modifier OnlyOwner(){
+        require(msg.sender == Owner, "You are not the owner of this contract");
+        _;
+    }
+
     //On Deploy code to run (Constructor)
     constructor(address _NFTcontract, uint256 _MinimumToReward){
         NFTcontract = _NFTcontract;
+        Owner = msg.sender;
     }
 
     function registerAllNFTs() public {
