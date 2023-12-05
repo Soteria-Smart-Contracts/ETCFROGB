@@ -128,13 +128,9 @@ contract NFTRewardDistributor is ReentrancyGuard{
 
         for(uint256 index; index < Tokens.length; index++){
             if(LatestClaim[Tokens[index]] != (RewardInstances.length - 1) || LatestClaim[Tokens[index]] == 0){
-                uint256 Instance;
-                if(FirstClaimComplete[Tokens[index]] == false){
-                    Instance = 0;
-                }
-                else{
-                    Instance = LatestClaim[Tokens[index]] + 1;
-                }
+                
+                Instance = LatestClaim[Tokens[index]] + 1;
+                
                 for(Instance; Instance < RewardInstances.length; Instance++){
                     TotalUnclaimed = (TotalUnclaimed + RewardInstances[Instance].EtherReward);
                 }
