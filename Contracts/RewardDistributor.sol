@@ -68,7 +68,7 @@ abstract contract ReentrancyGuard {
 
 contract NFTRewardDistributor is ReentrancyGuard{
     //Variable Declarations
-    uint256 public Owner;
+    address public Owner;
     address public NFTcontract;
     uint256 public TotalEtherInRewards;
     RewardInstance[] public RewardInstances;
@@ -154,7 +154,7 @@ contract NFTRewardDistributor is ReentrancyGuard{
         for(uint256 index; index < Tokens.length; index++){
             if(LatestClaim[Tokens[index]] != (RewardInstances.length - 1)){
                 uint256 Instance = LatestClaim[Tokens[index]] + 1;
-                
+
                 for(Instance; Instance < RewardInstances.length; Instance++){
                     TotalReward = (TotalReward + RewardInstances[Instance].EtherReward);
                 }
