@@ -706,3 +706,4 @@ window.abi =[
 		"type": "function"
 	}
 ]
+
