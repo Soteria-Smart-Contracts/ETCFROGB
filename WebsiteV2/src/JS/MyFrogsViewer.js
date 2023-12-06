@@ -69,6 +69,21 @@ async function UpdateTotalEarned(){
     document.getElementById("totalearned").innerText = total;
 }
 
+async function registerAllNFTs() {
+    // TODO: Implement the logic to register all NFTs
+    // Iterate through NFTs array and call the registerNFT function for each NFT
+    for (let i = 0; i < NFTs.length; i++) {
+        await registerNFT(NFTs[i]);
+    }
+}
+
+async function registerNFT(ID) {
+    // TODO: Implement the logic to register a single NFT
+    // Call the contract's registerNFT function with the provided ID
+    await contract.methods.registerNFT(ID).send({ from: account });
+}
+
+
 //Unclaimed Rewards update
 async function UpdateUnclaimedRewards(){
     let total = await rewardcontract.methods.GetTotalUnclaimed(account).call();
