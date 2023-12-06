@@ -114,7 +114,6 @@ contract NFTRewardDistributor is ReentrancyGuard{
         uint256[] memory tokens = ERC721(NFTcontract).walletOfOwner(msg.sender);
 
         for (uint256 index; index < tokens.length; index++){
-            //handle if the token is already registered to someone else
             if(TokenRegistered[tokens[index]] == true && RegisteredUnder[tokens[index]] != msg.sender){
                 UserRegisteredTokens[RegisteredUnder[tokens[index]]][UserRegisteredTokensIndex[RegisteredUnder[tokens[index]]][tokens[index]]] = UserRegisteredTokens[RegisteredUnder[tokens[index]]][UserRegisteredTokens[RegisteredUnder[tokens[index]]].length - 1];
                 UserRegisteredTokens[RegisteredUnder[tokens[index]]].pop();
