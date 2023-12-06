@@ -56,6 +56,9 @@ async function GetUserNFTs(){
 
 }
 
+//register all nfts using registerAllNFTs()
+
+
 async function UpdateTotalEarned(){
     let total = await rewardcontract.methods.UserTotalClaimed(account).call();
 
