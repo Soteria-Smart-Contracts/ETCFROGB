@@ -68,7 +68,15 @@ async function UpdateTotalEarned(){
 
 //Unclaimed Rewards update
 async function UpdateUnclaimedRewards(){
-    
+    let total = await rewardcontract.methods.UserTotalUnclaimed(account).call();
+
+    total = web3.utils.fromWei(total, 'ether');
+    total = parseFloat(total).toFixed(2);
+
+    total = total.toString()
+    console.log(total);
+    document.getElementById("unclaimed").innerText = total;
+}
 
 async function ClaimRewards(){
     let gas = await rewardcontract.methods.ClaimAllRewards().estimateGas({from: account});
