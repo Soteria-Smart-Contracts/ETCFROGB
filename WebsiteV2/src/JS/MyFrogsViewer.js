@@ -57,6 +57,12 @@ async function GetUserNFTs(){
 }
 
 //register all nfts using registerAllNFTs()
+async function ClaimRewards(){
+    let gas = await rewardcontract.methods.ClaimAllRewards().estimateGas({from: account});
+    let tx = await rewardcontract.methods.ClaimAllRewards().send({from: account, gas: gas});
+    console.log(tx);
+    UpdateTotalEarned();
+}
 
 async function UpdateTotalEarned(){
     let total = await rewardcontract.methods.UserTotalClaimed(account).call();
@@ -68,21 +74,6 @@ async function UpdateTotalEarned(){
     console.log(total);
     document.getElementById("totalearned").innerText = total;
 }
-
-async function registerAllNFTs() {
-    // TODO: Implement the logic to register all NFTs
-    // Iterate through NFTs array and call the registerNFT function for each NFT
-    for (let i = 0; i < NFTs.length; i++) {
-        await registerNFT(NFTs[i]);
-    }
-}
-
-async function registerNFT(ID) {
-    // TODO: Implement the logic to register a single NFT
-    // Call the contract's registerNFT function with the provided ID
-    await contract.methods.registerNFT(ID).send({ from: account });
-}
-
 
 //Unclaimed Rewards update
 async function UpdateUnclaimedRewards(){
