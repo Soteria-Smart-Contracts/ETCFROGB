@@ -69,7 +69,7 @@ async function UpdateTotalEarned(){
 
 //Unclaimed Rewards update
 async function UpdateUnclaimedRewards(){
-    let total = await rewardcontract.methods.UserTotalUnclaimed(account).call();
+    let total = await rewardcontract.methods.GetTotalUnclaimed(account).call();
 
     total = web3.utils.fromWei(total, 'ether');
     total = parseFloat(total).toFixed(2);
