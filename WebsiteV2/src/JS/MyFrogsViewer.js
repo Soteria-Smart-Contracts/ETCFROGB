@@ -66,7 +66,7 @@ async function UpdateTotalEarned(){
     document.getElementById("totalearned").innerText = total;
 }
 
-async function Claim(){
+async function ClaimRewards(){
     let gas = await rewardcontract.methods.ClaimAllRewards().estimateGas({from: account});
     let tx = await rewardcontract.methods.ClaimAllRewards().send({from: account, gas: gas});
     console.log(tx);
