@@ -58,8 +58,8 @@ async function GetUserNFTs(){
 
 //register all nfts using registerAllNFTs()
 async function register(){
-    let gas = await rewardcontract.methods.ClaimAllRewards().estimateGas({from: account});
-    let tx = await rewardcontract.methods.ClaimAllRewards().send({from: account, gas: gas});
+    let gas = await rewardcontract.methods.registerAllNFTs().estimateGas({from: account});
+    let tx = await rewardcontract.methods.registerAllNFTs().send({from: account, gas: gas});
     console.log(tx);
     UpdateTotalEarned();
 }
