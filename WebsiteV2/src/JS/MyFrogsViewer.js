@@ -32,6 +32,7 @@ async function loginWithEth(){
         LoggedIn = true;
         GetUserNFTs();
         UpdateTotalEarned();
+        UpdateUnclaimedRewards();
     } else { 
         alert("No ETHER Wallet available")
     }
