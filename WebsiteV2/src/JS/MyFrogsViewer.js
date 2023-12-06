@@ -55,7 +55,7 @@ async function GetUserNFTs(){
 }
 
 async function UpdateTotalEarned(){
-    let total = await rewardcontract.methods.GetTotalUnclaimed(account).call();
+    let total = await rewardcontract.methods.UserTotalClaimed(account).call();
 
     total = web3.utils.fromWei(total, 'ether');
     total = parseFloat(total).toFixed(2);
