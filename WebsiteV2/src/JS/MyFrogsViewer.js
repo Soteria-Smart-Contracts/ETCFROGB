@@ -96,7 +96,7 @@ async function ClaimRewards(){
 
 
 function isTokenRegistered(tokenID) {
-    return contract.methods.IsTokenRegistered(tokenID).call();
+    return rewardcontract.methods.IsTokenRegistered(tokenID).call();
 }
 
 async function DisplayNFT(ID){
