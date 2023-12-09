@@ -51,6 +51,7 @@ async function GetUserNFTs(){
     let index = 0;
     while(index < NFTs.length){
         DisplayNFT(NFTs[index]);
+        console.log(NFTs[index]);
         index++;
     }
 
