@@ -241,7 +241,7 @@ contract NFTRewardDistributor is ReentrancyGuard{
     }
 }
 
-
+//payable function that 
 
 interface ERC721{
     function ownerOf(uint256 tokenId) external view returns (address owner);
