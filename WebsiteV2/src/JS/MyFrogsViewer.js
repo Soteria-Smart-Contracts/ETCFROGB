@@ -108,6 +108,7 @@ async function DisplayNFT(ID){
     let isRegistered = await isTokenRegistered(ID);
     if(isRegistered){
         
+    }
     NewNFT.innerHTML = img + '<br>' + '<a class="nftID">FrogB ID:</a>' + '<br>' + '<a class="nftID">' + ID + '</a>' + '<br>' + '<a class="nftID scout" href="' + ScoutLink + '" target="_blank">View On Blockscout</a>'//add a button thats says claim;
     NFTContainer.appendChild(NewNFT);
 }
