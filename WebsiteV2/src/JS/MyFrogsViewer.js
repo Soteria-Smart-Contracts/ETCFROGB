@@ -2,7 +2,7 @@ let account;
 const ABI = window.abi;
 let netID;
 const contractAddress = "0x5925630e4D0AB569A40E600064Da2930b4838Da3";
-const rewardAddress = "0x9875DC7Baa92d521dd2535D9262fB7FC3d902dBD";
+const rewardAddress = "0x03Ccdf91140A5350759Fd5Df56D9D2c47b91125F";
 let LoggedIn = false;
 let NFTs = [];
 
