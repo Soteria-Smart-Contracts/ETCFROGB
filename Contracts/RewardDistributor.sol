@@ -241,7 +241,7 @@ contract NFTRewardDistributor is ReentrancyGuard{
     }
 
 
-        recieve() external payable{
+    recieve() external payable{
         InitializeRewardInstance();
     }
 }
