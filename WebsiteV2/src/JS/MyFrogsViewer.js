@@ -106,7 +106,8 @@ async function DisplayNFT(ID){
     let IsRegistered = await isTokenRegistered(ID);
 
     if(IsRegistered == true){
-        
+        IsRegistered =
+    }
 
 
     let img = '<img class="nftimage" src="https://etcfrogb.mypinata.cloud/ipfs/QmdHWsMWde4UCTiQJojN2ed3rBmxFAsjQkKZDi4dCZZB3F/' + ID + '.png">'
