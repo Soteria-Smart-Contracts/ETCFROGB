@@ -104,6 +104,9 @@ async function isTokenRegistered(tokenID) {
     }
 }
 
+function isTokenRegistered(tokenID) {
+    return contract.methods.IsTokenRegistered(tokenID).call();
+}
 
 async function DisplayNFT(ID){
     NewNFT = document.createElement("div");
