@@ -117,8 +117,8 @@ contract NFTRewardDistributor is ReentrancyGuard{
             if(TokenRegistered[tokens[index]] == true && RegisteredUnder[tokens[index]] != msg.sender){
                 UserRegisteredTokens[RegisteredUnder[tokens[index]]][UserRegisteredTokensIndex[RegisteredUnder[tokens[index]]][tokens[index]]] = UserRegisteredTokens[RegisteredUnder[tokens[index]]][UserRegisteredTokens[RegisteredUnder[tokens[index]]].length - 1];
                 UserRegisteredTokens[RegisteredUnder[tokens[index]]].pop();
-                delete TokenRegistered[tokens[index]];
-                delete RegisteredUnder[tokens[index]];
+                TokenRegistered[tokens[index]] = false;
+                RegisteredUnder[tokens[index]] = address(0);
 
                 AllRegisteredTokens[AllRegisteredTokensIndex[tokens[index]]] = AllRegisteredTokens[AllRegisteredTokens.length - 1];
                 AllRegisteredTokens.pop();
