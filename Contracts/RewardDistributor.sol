@@ -198,7 +198,8 @@ contract NFTRewardDistributor is ReentrancyGuard{
         return(AllRegisteredTokens);
     }
 
-    //check is a token is registered under the msg.sender by seing 
+    //check is a token is registered under the msg.sender by seing if it is in the UserRegisteredTokens array
+    
 
 
     //Owner functions
