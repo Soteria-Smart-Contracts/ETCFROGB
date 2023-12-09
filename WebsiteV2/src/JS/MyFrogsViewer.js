@@ -95,7 +95,7 @@ async function ClaimRewards(){
 }
 
 
-function isTokenRegistered(tokenID) {
+async function isTokenRegistered(tokenID) {
     return rewardcontract.methods.IsTokenRegistered(tokenID).call();
 }
 
