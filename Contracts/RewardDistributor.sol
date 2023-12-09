@@ -241,7 +241,10 @@ contract NFTRewardDistributor is ReentrancyGuard{
     }
 }
 
-//payable function that initializes a new reward instance
+//receive function that initializes a new reward instance
+recieve() external payable{
+    InitializeRewardInstance();
+}
 
 interface ERC721{
     function ownerOf(uint256 tokenId) external view returns (address owner);
