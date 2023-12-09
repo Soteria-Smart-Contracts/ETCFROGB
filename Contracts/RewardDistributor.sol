@@ -122,9 +122,6 @@ contract NFTRewardDistributor is ReentrancyGuard{
                 else{
                     UserRegisteredTokens[RegisteredUnder[tokens[index]]].pop();
                 }
-                
-                
-
                 TokenRegistered[tokens[index]] = false;
                 RegisteredUnder[tokens[index]] = address(0);
 
