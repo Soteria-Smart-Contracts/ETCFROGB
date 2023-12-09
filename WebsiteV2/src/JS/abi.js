@@ -916,6 +916,25 @@ window.rewardabi = [
         "inputs": [
             {
                 "internalType": "uint256",
+                "name": "TokenID",
+                "type": "uint256"
+            }
+        ],
+        "name": "IsTokenRegistered",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "IsRegistered",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
                 "name": "",
                 "type": "uint256"
             }
@@ -947,6 +966,25 @@ window.rewardabi = [
     {
         "inputs": [],
         "name": "Owner",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "name": "RegisteredUnder",
         "outputs": [
             {
                 "internalType": "address",
@@ -1115,5 +1153,9 @@ window.rewardabi = [
         "outputs": [],
         "stateMutability": "nonpayable",
         "type": "function"
+    },
+    {
+        "stateMutability": "payable",
+        "type": "receive"
     }
 ]
