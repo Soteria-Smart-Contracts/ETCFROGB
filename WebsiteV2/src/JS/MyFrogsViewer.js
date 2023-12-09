@@ -112,7 +112,7 @@ async function DisplayNFT(ID){
     else{
         isRegistered = "Not Registered";
     }
-    NewNFT.innerHTML = img + '<br>' + '<a class="nftID">FrogB ID:</a>' + '<br>' + '<a class="nftID">' + ID + '</a>' + '<br>' + '<a class="nftID scout" href="' + ScoutLink + '" target="_blank">View On Blockscout</a>' + '<br>' + isRegistered/;
+    NewNFT.innerHTML = img + '<br>' + '<a class="nftID">FrogB ID:</a>' + '<br>' + '<a class="nftID">' + ID + '</a>' + '<br>' + '<a class="nftID scout" href="' + ScoutLink + '" target="_blank">View On Blockscout</a>' + '<br>' + isRegistered;
     NFTContainer.appendChild(NewNFT);
 }
 
