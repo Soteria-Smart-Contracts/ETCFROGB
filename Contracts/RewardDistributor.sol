@@ -239,11 +239,11 @@ contract NFTRewardDistributor is ReentrancyGuard{
             }
         }
     }
-}
 
-//receive function that initializes a new reward instance
-recieve() external payable{
-    InitializeRewardInstance();
+
+        recieve() external payable{
+        InitializeRewardInstance();
+    }
 }
 
 interface ERC721{
