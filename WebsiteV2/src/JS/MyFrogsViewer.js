@@ -94,15 +94,6 @@ async function ClaimRewards(){
     UpdateTotalEarned();
 }
 
-async function isTokenRegistered(tokenID) {
-    try {
-        const isRegistered = await contract.methods.IsTokenRegistered(tokenID).call();
-        return isRegistered;
-    } catch (error) {
-        console.error("Error checking token registration:", error);
-        return false;
-    }
-}
 
 function isTokenRegistered(tokenID) {
     return contract.methods.IsTokenRegistered(tokenID).call();
