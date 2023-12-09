@@ -107,7 +107,7 @@ async function DisplayNFT(ID){
     let ScoutLink = 'https://blockscout.com/etc/mainnet/token/0x5925630e4D0AB569A40E600064Da2930b4838Da3/instance/' + ID +  '/token-transfers';
     let isRegistered = await isTokenRegistered(ID);
     if(isRegistered){
-        
+        isRegistered = "Registered";
     }
     NewNFT.innerHTML = img + '<br>' + '<a class="nftID">FrogB ID:</a>' + '<br>' + '<a class="nftID">' + ID + '</a>' + '<br>' + '<a class="nftID scout" href="' + ScoutLink + '" target="_blank">View On Blockscout</a>'//add a button thats says claim;
     NFTContainer.appendChild(NewNFT);
