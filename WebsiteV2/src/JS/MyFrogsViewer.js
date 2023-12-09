@@ -109,6 +109,8 @@ async function DisplayNFT(ID){
     NFTContainer.appendChild(NewNFT);
 }
 
+Something that I changed in this function has made it so only one of my 2 nfts are displaying, why could that be?
+
 {/* <div class="NFT" id="Temp">
 <img class="nftimage" src="src/images/collection/1445.png">
 <a class="nftID head">FrogB ID:</a>
