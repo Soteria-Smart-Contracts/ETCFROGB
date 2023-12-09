@@ -198,6 +198,11 @@ contract NFTRewardDistributor is ReentrancyGuard{
         return(AllRegisteredTokens);
     }
 
+    //check is a token is registered
+    function IsTokenRegistered(uint256 TokenID) public view returns(bool IsRegistered){
+        return(TokenRegistered[TokenID]);
+    }
+
     //Owner functions
 
     function transferOwnership(address newOwner) public OnlyOwner{
