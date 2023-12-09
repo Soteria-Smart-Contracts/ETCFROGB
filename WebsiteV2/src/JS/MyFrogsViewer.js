@@ -50,7 +50,7 @@ async function GetUserNFTs(){
     NFTs = await contract.methods.walletOfOwner(account).call();
     let index = 0;
     while(index < NFTs.length){
-        DisplayNFT(NFTs[index]);
+        await DisplayNFT(NFTs[index]);
         index++;
     }
 
