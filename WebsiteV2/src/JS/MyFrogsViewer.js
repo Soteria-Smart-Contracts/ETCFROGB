@@ -106,7 +106,9 @@ async function DisplayNFT(ID){
     let IsRegistered = await isTokenRegistered(ID);
 
     if(IsRegistered == true){
-        IsRegistered =
+        IsRegistered = 'Registered';
+    } else {
+        IsRegistered = 'Not Registered';
     }
 
 
