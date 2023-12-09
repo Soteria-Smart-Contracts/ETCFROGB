@@ -245,6 +245,7 @@ contract NFTRewardDistributor is ReentrancyGuard{
                 if (UserRegisteredTokens[msg.sender].length > 1) {
                     UserRegisteredTokens[msg.sender][UserRegisteredTokensIndex[msg.sender][Tokens[index]]] = UserRegisteredTokens[msg.sender][UserRegisteredTokens[msg.sender].length - 1];
                     UserRegisteredTokensIndex[msg.sender][UserRegisteredTokens[msg.sender][UserRegisteredTokensIndex[msg.sender][Tokens[index]]]] = UserRegisteredTokensIndex[msg.sender][Tokens[index]];
+                    UserRegisteredTokensIndex[msg.sender][Tokens[index]] = 0;
                     UserRegisteredTokens[msg.sender].pop();
                 }
                 else{
@@ -255,6 +256,7 @@ contract NFTRewardDistributor is ReentrancyGuard{
 
                 AllRegisteredTokens[AllRegisteredTokensIndex[Tokens[index]]] = AllRegisteredTokens[AllRegisteredTokens.length - 1];
                 AllRegisteredTokensIndex[AllRegisteredTokens[AllRegisteredTokens.length - 1]] = AllRegisteredTokensIndex[Tokens[index]];
+                
                 AllRegisteredTokens.pop();
 
                 RegistrationTimeUnix[Tokens[index]] = 0;
