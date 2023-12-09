@@ -115,11 +115,17 @@ contract NFTRewardDistributor is ReentrancyGuard{
 
         for (uint256 index; index < tokens.length; index++){
             if(TokenRegistered[tokens[index]] == true && RegisteredUnder[tokens[index]] != msg.sender){
-                UserRegisteredTokens[RegisteredUnder[tokens[index]]][UserRegisteredTokensIndex[RegisteredUnder[tokens[index]]][tokens[index]]] = UserRegisteredTokens[RegisteredUnder[tokens[index]]][UserRegisteredTokens[RegisteredUnder[tokens[index]]].length - 1];
-                UserRegisteredTokens[RegisteredUnder[tokens[index]]].pop();
+                if (AllRegisteredTokens.length > 1) {
+                    uint256 lastIndex = AllRegisteredTokens.length - 1;
+                    uint256 tokenIndex = AllRegisteredTokensIndex[tokens[index]];
+
+                    AllRegisteredTokens[tokenIndex] = AllRegisteredTokens[lastIndex];
+                    AllRegisteredTokensIndex[AllRegisteredTokens[lastIndex]] = tokenIndex;
+                }
+
+                AllRegisteredTokens.pop();
                 delete TokenRegistered[tokens[index]];
                 delete RegisteredUnder[tokens[index]];
-                AllRegisteredTokens[AllRegisteredTokensIndex[tokens[index]]] = AllRegisteredTokens[AllRegisteredTokens.length - 1];
                 AllRegisteredTokens.pop();
 
                 RegistrationTimeUnix[tokens[index]] = 0;
