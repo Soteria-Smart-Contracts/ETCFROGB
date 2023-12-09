@@ -62,6 +62,7 @@ async function register(){
     let tx = await rewardcontract.methods.registerAllNFTs().send({from: account, gas: gas});
     console.log(tx);
     UpdateTotalEarned();
+    location.reload();
 }
 
 async function UpdateTotalEarned(){
