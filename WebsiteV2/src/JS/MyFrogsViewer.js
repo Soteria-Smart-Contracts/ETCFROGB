@@ -109,6 +109,9 @@ async function DisplayNFT(ID){
     if(isRegistered){
         isRegistered = "Registered";
     }
+    else{
+        isRegistered = "Not Registered";
+    }
     NewNFT.innerHTML = img + '<br>' + '<a class="nftID">FrogB ID:</a>' + '<br>' + '<a class="nftID">' + ID + '</a>' + '<br>' + '<a class="nftID scout" href="' + ScoutLink + '" target="_blank">View On Blockscout</a>'//add a button thats says claim;
     NFTContainer.appendChild(NewNFT);
 }
