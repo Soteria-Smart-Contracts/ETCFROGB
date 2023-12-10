@@ -150,7 +150,8 @@ async def on_message(message):
     else:
       bot_prompt = f"{instructions}"
     prompt = f"{bot_prompt}{message.author.name}: {message.content}\n{image_caption}\n{bot.user.name}:"
-    #
+    #push the message content to the previous messages list with the name of the user
+    
     async with message.channel.typing():
       response = await generate_response(prompt)
     chunks = split_response(response)
