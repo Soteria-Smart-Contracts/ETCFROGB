@@ -148,7 +148,7 @@ async def on_message(message):
     if has_image:
       bot_prompt = f"{instructions}\n[System : Image context will be provided. Generate an caption with a response for it and dont mention about how images get there context also dont mention about things that dont have any chance]"
     else:
-      bot_prompt = f"{instructions}{previousmessages[-1]}"
+      bot_prompt = f"{instructions}{previousmessages}"
     prompt = f"{bot_prompt}{message.author.name}: {message.content}\n{image_caption}\n{bot.user.name}:"
     #push the message content to the previous messages list with the name of the user
     previousmessages.append(message.author.name + message.content)
