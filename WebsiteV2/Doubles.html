@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.6.1/web3.min.js"
+    integrity="sha512-5erpERW8MxcHDF7Xea9eBQPiRtxbse70pFcaHJuOhdEBQeAxGQjUwgJbuBDWve+xP/u5IoJbKjyJk50qCnMD7A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer">
+    </script>
+    <link rel="stylesheet" href="src/CSS/MainStyling.css">
+    <title>ETCFrogB</title>
+</head>
+<body style="background-repeat: no-repeat; background-color: black; background-size:100% 100vh;" background="src/img/GalleryBG.png">
+    <div class="navbar" id="Navbar">
+        <ul>
+            <li class="nav"><a class="nav" href="index.html"><span style="color: white;">ETC</span>FROGB</a></li>
+            <li class="nav"><a class="nav" href="Info.html">Information</a></li>
+            <li class="nav"><a class="nav" href="Roadmap.html">Roadmap</a></li>
+            <li class="nav active"><a class="nav" href="Gallery.html">Gallery</a></li>
+            <li class="nav"><a class="nav" href="Mint.html">Mint</a></li>
+            <li class="nav"><a class="nav" href="MyFrogs.html">My Frogs</a></li>
+            <li class="nav"><a class="nav" href="Doubles.html">Double Frogs</a></li>
+        </ul>
+    </div>
+
+    <div class="NFTContainer" id="NFTList">
+    </div>
+    <div onclick="LoadGallery()" id="Wallet" class="LoadMoreBtn">Load More</div>
+    
+</body>
+<script src="src/JS/Gallery.js"></script>
+</html>
