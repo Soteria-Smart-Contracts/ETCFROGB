@@ -62,8 +62,7 @@ async def on_ready():
 
 async def generate_response(prompt):
   response = (chatbase.GetAnswer(prompt=prompt, model="gpt-4"))
-  #push the response to the previous messages list
-    previousmessages.append(response)
+  previousmessages.append(response)
   if not response:
     response = "I couldn't generate a response. Please try again."
   return response
