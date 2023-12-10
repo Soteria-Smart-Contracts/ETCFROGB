@@ -150,6 +150,7 @@ async def on_message(message):
     else:
       bot_prompt = f"{instructions}"
     prompt = f"{bot_prompt}{message.author.name}: {message.content}\n{image_caption}\n{bot.user.name}:"
+    #
     async with message.channel.typing():
       response = await generate_response(prompt)
     chunks = split_response(response)
