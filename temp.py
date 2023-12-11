@@ -60,7 +60,7 @@ async def on_ready():
   print(f"Invite link: {invite_link}")
 
 
-async def generate_response(prompt, previousmessages):
+async def generate_response(prompt):
   response = (chatbase.GetAnswer(prompt=prompt, model="gpt-4"))
   previousmessages = previousmessages + ("TESS:" + response)
   if not response:
@@ -117,7 +117,7 @@ async def process_image_link(image_url):
 
 
 @bot.event
-async def on_message(message, previousmessages):
+async def on_message(message):
   print("Message Received, Generating Response")
   print(previousmessages)
   if message.author.bot:
