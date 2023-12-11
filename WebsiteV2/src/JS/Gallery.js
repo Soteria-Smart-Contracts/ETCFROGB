@@ -27,7 +27,13 @@ async function LoadGallery(){
 }
 
 //load doubles
-
+async function LoadDoubles(){
+    let index = 0;
+    while(index < Doubles.length){
+        DisplayNFT(Doubles[index]);
+        index++;
+    }
+}
 
 
 async function DisplayNFT(ID){
