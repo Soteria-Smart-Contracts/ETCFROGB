@@ -117,7 +117,7 @@ async def process_image_link(image_url):
 
 
 @bot.event
-async def on_message(message):
+async def on_message(message, previousmessages):
   print("Message Received, Generating Response")
   print(previousmessages)
   if message.author.bot:
