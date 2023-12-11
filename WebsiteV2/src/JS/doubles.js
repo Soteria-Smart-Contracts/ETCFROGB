@@ -16,17 +16,8 @@ const Doubles = [
     3779, 9303, 300, 4014, 7099, 5155, 2605
 ];
 
-LoadGallery();
+LoadDoubles();
 
-async function LoadGallery(){
-    let LastToLoad = LastLoaded + 50;
-    while(LastLoaded < LastToLoad){
-        DisplayNFT(LastLoaded)
-        LastLoaded++;
-    }
-}
-
-//load doubles
 async function LoadDoubles(){
     let index = 0;
     while(index < Doubles.length){
