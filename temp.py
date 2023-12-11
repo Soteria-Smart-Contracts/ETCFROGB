@@ -119,7 +119,7 @@ async def process_image_link(image_url):
 @bot.event
 async def on_message(message):
   print("Message Received, Generating Response")
-  global pre
+  global previousmessages
   print(previousmessages)
   if message.author.bot:
     return
