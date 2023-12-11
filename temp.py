@@ -61,6 +61,7 @@ async def on_ready():
 
 
 async def generate_response(prompt):
+  global previousmessages
   response = (chatbase.GetAnswer(prompt=prompt, model="gpt-4"))
   previousmessages = previousmessages + ("TESS:" + response)
   if not response:
