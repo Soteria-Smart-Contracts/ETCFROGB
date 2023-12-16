@@ -49,7 +49,7 @@ async function mint(){
         alert("Amount to mint must be greater than 0 and less than 101")
         return('Error Thrown')
     }
-    let amountWei = amount * 2500000000000000000;
+    let amountWei = amount * 3000000000000000000;
     let userbal = await web3.eth.getBalance(account);
     if(amountWei > userbal){
         alert("Insufficient ETC to buy this number of Bogs")
